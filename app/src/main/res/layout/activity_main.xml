@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="20dp"
+    android:orientation="horizontal"
+    >
+
+    <EditText
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020-05-05 V1.0"
+         />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+        <Button
+            android:id="@+id/keyUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="前进"
+            />
+        <Button
+            android:id="@+id/keycenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/keyUp"
+            android:text="方向盘"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Button
+            android:id="@+id/keyLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="左转"
+            android:layout_toLeftOf="@id/keycenter"
+            android:layout_above="@id/keyBack"
+            />
+
+        <Button
+            android:id="@+id/keyRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="右转"
+            android:layout_toRightOf="@id/keycenter"
+            android:layout_above="@id/keyBack"
+            />
+
+        <Button
+            android:id="@+id/keyBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="后退"
+            android:layout_below="@id/keycenter"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:id="@+id/keyDrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/keyBack"
+            android:text="倒料"
+
+            />
+        <Button
+            android:layout_marginTop="30dp"
+            android:id="@+id/keyUnDrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/keyBack"
+            android:text="回正"
+            android:layout_toRightOf="@id/keyDrop"
+            />
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
